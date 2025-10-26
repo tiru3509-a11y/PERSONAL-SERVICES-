@@ -1,0 +1,49 @@
+
+import React from 'react';
+
+const iconProps = {
+  className: "w-8 h-8 text-cyan-400",
+  strokeWidth: 1.5,
+};
+
+// Generic Icon component for custom sizing
+const Icon: React.FC<{ children: React.ReactNode, className?: string }> = ({ children, className }) => (
+  <svg className={className || "w-6 h-6"} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+    {children}
+  </svg>
+);
+
+
+export const Icons = {
+  Rocket: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.82m5.84-2.56a6 6 0 01-5.84 7.38v-4.82m5.84-2.56l-5.84 2.56m5.84-2.56l-2.56-5.84m-5.84 8.4l-2.56-5.84m0 0l-5.84-2.56m5.84 2.56v-4.82m0 0l2.56-5.84m-2.56 5.84l-5.84-2.56m0 0l-2.56-5.84m2.56 5.84l5.84 2.56" /></svg>,
+  Target: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+  Lightbulb: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>,
+  Workflow: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" /></svg>,
+  Briefcase: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
+  UserCheck: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14l-4 6h8l-4-6z" /></svg>,
+  Smartphone: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>,
+  Code: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>,
+  BarChart: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>,
+  DollarSign: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 12v-2m0 2v2m0-2.348V12M12 17v-2.652M12 12h.01M12 12H9.401M12 12H12m3.282-3.282A4 4 0 0012 8m0 4a4 4 0 013.282-1.282" /></svg>,
+  TrendingUp: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>,
+  Users: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-6-6h6z" /></svg>,
+  Handshake: () => <svg {...iconProps} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M15.421 17.521c.563.282 1.18.479 1.842.479h.002a4.5 4.5 0 004.496-4.243l-2.18-5.45a3 3 0 00-2.812-2.035h-2.583a3 3 0 00-2.812 2.035L8.58 13.757a4.5 4.5 0 004.496 4.243h.002c.662 0 1.28-.197 1.842-.479zM12 12l.002-3.667A4.5 4.5 0 0113.842 4.5h2.316a4.5 4.5 0 014.496 4.243l-2.18 5.45a3 3 0 01-2.812 2.035h-2.583a3 3 0 01-2.812-2.035L6.16 8.243A4.5 4.5 0 0110.158 4.5h.002c.662 0 1.28.197 1.842.479" /></svg>,
+  AppWindow: ({ className }: { className?: string; }) => <Icon className={className || iconProps.className}><path strokeLinecap="round" strokeLinejoin="round" d="M6 20h12M12 20V8m0 0l-3 3m3-3l3 3M6 6h.01M6 10h.01M10 6h.01M14 6h.01M10 10h.01M14 10h.01M18 6h.01M18 10h.01M6 14h.01M10 14h.01M14 14h.01M18 14h.01M4 22h16a2 2 0 002-2V6a2 2 0 00-2-2H4a2 2 0 00-2 2v14a2 2 0 002 2z" /></Icon>,
+  Home: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></Icon>,
+  PlusCircle: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></Icon>,
+  Search: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></Icon>,
+  Star: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></Icon>,
+  Filter: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L12 14.414V19a1 1 0 01-1.447.894l-4-2A1 1 0 016 17v-2.586L3.293 6.707A1 1 0 013 6V4z" /></Icon>,
+  Cleaning: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M12 10l-2 2-2-2m4 4V3m-4 7v4a2 2 0 002 2h4a2 2 0 002-2v-4M7 14h10" /></Icon>,
+  Delivery: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-2 2-2-2z" /></Icon>,
+  Repairs: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></Icon>,
+  Cooking: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10s5 2 7 0c2-2-3-3-3-3a8 8 0 0111.314 11.314zM4 6a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" /></Icon>,
+  EventHelp: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M18 3a1 1 0 00-1.447-.894L15 4l-1.553-1.894a1 1 0 00-1.447 0L10.447 4 9 2.106a1 1 0 00-1.447 0L6 4 4.553 2.106A1 1 0 003.106 3L2 12h20L18 3zM2 12a10 10 0 0120 0v6a2 2 0 01-2 2H4a2 2 0 01-2-2v-6z" /></Icon>,
+  Tutoring: ({ className }: { className?: string; }) => <Icon className={className}><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></Icon>,
+  Packing: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-14L4 7m0 10l8 4m-8-14h16" /></Icon>,
+  DataEntry: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10H9m-4-7h14M5 7h14M5 10h14M5 13h14M5 16h14" /></Icon>,
+  Calendar: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></Icon>,
+  User: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></Icon>,
+  Map: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13v-6m0 0l6-3m-6 3l-6-3m12 5l5.447 2.724A1 1 0 0021 16.382V5.618a1 1 0 00-1.447-.894L15 7m0 13v-6m0 0l-6-3" /></Icon>,
+  MapPin: ({ className }: { className?: string; }) => <Icon className={className}><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></Icon>,
+};
